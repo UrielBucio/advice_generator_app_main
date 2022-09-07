@@ -12,8 +12,68 @@
   padding: 0;
 }
 body {
+  align-items: center;
+  background-color: var(--darkBlue);
+  color: var(--lightCyan);
+  display: flex;
+  flex-flow: column nowrap;
   font-family: 'Manrope', sans-serif;
   font-size: 28px;
+  justify-content: center;
+}
+.main-container {
+  background-color: var(--darkGrayishBlue);
+  border-radius: 10px;
+  margin: 120px auto;
+  padding: 20px 20px 55px;
+  position: relative;
+  text-align: center;
+  width: 92%;
+}
+.id-advice {
+  color: var(--neonGreen);
+  font-size: 0.65rem;
+  letter-spacing: 3.5px;
+  margin: 20px 0 25px;
+  text-transform: uppercase;
+}
+.advice {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 33px;
+}
+.divider-container {
+  height: 2rem;
+  margin-top: 15px;
+}
+.line {
+  background-image: url('../src/img/pattern-divider-mobile.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+.button-container {
+  background-color: var(--neonGreen);
+  background-image: url('../src/img/icon-dice.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 4rem;
+  left: 50%;
+  position: absolute;
+  top: 85%;
+  transform: translateY(30%) translateX(-50%);
+  transition: all ease-in-out 0.3s;
+  width: 4rem;
+}
+.button-container:hover {
+  box-shadow: -1px 1px 88px 12px var(--neonGreen);
+  -webkit-box-shadow: -1px 1px 88px 12px var(--neonGreen);
+  -moz-box-shadow: -1px 1px 88px 12px var(--neonGreen);
+  transition: all ease-in-out 0.3s;
 }
 .attribution { 
   font-size: 11px; 
