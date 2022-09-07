@@ -64,7 +64,7 @@ body {
   height: 4rem;
   left: 50%;
   position: absolute;
-  top: 85%;
+  top: 75%;
   transform: translateY(30%) translateX(-50%);
   transition: all ease-in-out 0.3s;
   width: 4rem;
@@ -80,11 +80,16 @@ body {
   text-align: center; 
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--neonGreen); 
+}
+@media screen and (min-width: 768px){
+  .main-container {
+    width: 55%;
+  }
 }
 @media screen and (min-width: 900px) {
   .main-container {
-    margin-top: 220px;
+    margin: 220px auto;
     padding: 50px;
     padding-bottom: 70px;
     width: 37.5%;
@@ -99,5 +104,8 @@ body {
   }
   .line {
     background-image: url('../src/img/pattern-divider-desktop.svg');
+  }
+  .button-container {
+    top: 80%;
   }
 }
