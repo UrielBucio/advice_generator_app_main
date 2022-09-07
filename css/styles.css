@@ -82,3 +82,22 @@ body {
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
+@media screen and (min-width: 900px) {
+  .main-container {
+    margin-top: 220px;
+    padding: 50px;
+    padding-bottom: 70px;
+    width: 37.5%;
+  }
+  .id-advice {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+  .advice {
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+  .line {
+    background-image: url('../src/img/pattern-divider-desktop.svg');
+  }
+}
